@@ -1,0 +1,21 @@
+package quiz04;
+
+public class Gun {
+	private String name;
+	private int bullet;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getBullet() {
+		return bullet;
+	}
+	public void setBullet(int bullet) {
+		this.bullet = bullet;
+	}
+
+	
+	
+}

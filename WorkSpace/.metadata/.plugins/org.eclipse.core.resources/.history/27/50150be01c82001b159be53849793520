@@ -1,0 +1,39 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Hanoi {
+	
+	 // hanoi의 원판을 몇 번 옮겼는지 반환하는 함수
+	static int cnt;
+	public static void hanoi(int n, int x, int y , int z) {	
+							// n은 원반수, x는 시작점, y는 중간점, z는 도착점
+		if(n == 1) {
+			System.out.println(x + "  " + z);
+		} else {
+			hanoi(n - 1, x, z, y);  
+			System.out.println(x + " " + z);
+			hanoi(n-1, y,x,z);
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n;		// 원판 개수 
+		
+		do {
+			System.out.print("원판의 개수 >>>");
+			n = sc.nextInt();
+		} while( n < 1 || n > 20);
+		
+
+		
+		System.out.println((1<<n) - 1);
+		hanoi(n,1,2,3);
+		
+		sc.close();
+	}
+
+}

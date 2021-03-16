@@ -1,0 +1,26 @@
+package quiz06;
+
+public class Bakery {
+	private int num_bread;
+	private int price_bread;
+	private int money;
+	public Bakery(int num_bread, int price_bread, int money) {
+		this.num_bread = num_bread;
+		this.price_bread = price_bread;
+		this.money = money;
+	}
+	
+	public void sell(int num) {
+		if(this.num_bread > num) {
+			num_bread -= num;
+			this.money += num * price_bread;
+		}
+		else
+			System.out.println(num - num_bread + "개의 빵이 부족합니다.");
+	}
+	
+	public void info() {
+		System.out.println("남은 빵: " + this.num_bread + ", 빵 가격: " + this.price_bread + ", 자본: " + this.money);
+	}
+
+}

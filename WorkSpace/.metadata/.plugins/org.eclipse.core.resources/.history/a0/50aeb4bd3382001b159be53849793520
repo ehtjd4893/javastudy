@@ -1,0 +1,17 @@
+package ex03_overloading;
+
+public class Square extends Rectangle {
+	int height;
+	@Override
+	void set(int w) {
+		height = w;
+	}
+
+	@Override
+	int getArea() {
+		if( height > 0 )
+			return (int)Math.pow(height, 2);
+		return 0;
+	}
+	
+}

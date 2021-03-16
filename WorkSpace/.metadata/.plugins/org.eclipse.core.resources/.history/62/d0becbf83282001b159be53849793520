@@ -1,0 +1,15 @@
+package ex03_overloading;
+
+public class Square extends Rectangle {
+	@Override
+	void set(int w) {
+		super.set(w, w);
+	}
+
+	@Override
+	int getArea() {
+		// TODO Auto-generated method stub
+		return super.getArea();
+	}
+	
+}

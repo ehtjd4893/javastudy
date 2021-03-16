@@ -1,0 +1,20 @@
+package ex03_api;
+
+import java.util.Calendar;
+
+// Calendar를 활용해서 기념일 계산하기.
+// 2개의 날짜를 만들고, 그 중 하나는 기념일로 수정
+// 날짜의 차이를 구하고, 일(day)수로 출력
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		Calendar date = Calendar.getInstance();		// 21년 내 생일
+		Calendar today = Calendar.getInstance();	// 오늘 날짜
+		date.set(2021, 2, 27);
+		long diff = today.getTimeInMillis() - date.getTimeInMillis();
+		int diff_day = (int)(diff * 1.1574074074067E-8);
+		
+		
+	}
+
+}

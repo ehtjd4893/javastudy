@@ -1,0 +1,31 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Star_sq {
+	
+	public static void draw_line(int star, int w_space) {
+		for(int i = 0;)
+	}
+	
+	public static StringBuffer sb = new StringBuffer();
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		int outest = 4 * n - 3;
+		for(int i = 0; i < outest; i++) {
+			sb.append("*");
+			do{
+				outest-=2;
+				sb.append("*");
+				
+			} while(outest > 0); 
+		}
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,34 @@
+package quiz10;
+
+public class Lecture {
+	Student[] students;
+	String title;
+	public Lecture(String string, String[] n) {
+		this.title = string;
+		this.students = new Student[n.length];
+		for(int i = 0; i < n.length;i++)
+			students[i] = new Student(n[i]);
+		
+	}
+
+	public void exam(int n) {
+		for(int i = 0; i < students.length;i++) {
+			students[i].setScores(n);
+		}
+		
+	}
+	public double getLecAvg() {
+		double total = 0.0;
+		for(Student std : students) {
+			total+= std.getAverage();
+		}
+		return total / students.length;
+	}
+	
+	public void info() {
+		for(int i = 0; i < students.length;i++)
+			this.students[i].info();
+		
+	}
+
+}

@@ -1,0 +1,46 @@
+package quiz09;
+
+public class Soldier {
+		private Gun[] guns;
+		private int idx;
+		private String name;
+
+
+		
+	public Soldier(String name, int cnt) {
+			this.name = name;
+			guns = new Gun[cnt];
+		}
+
+	public void addGun(Gun gun2) {
+		guns[idx++] = gun2;
+	}
+
+	public void shoot(int n) {
+		for(int i = 0; i < idx; i++) {
+			guns[i].shoot();
+		}
+	}
+	
+	public void shoot(int id, int n) {
+		
+	}
+	
+	public void shoot(String name, int n) {
+		
+	}
+	
+	public void reload(int n) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void reload(int id, int n) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void reload(String name, int n) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,39 @@
+package quiz04;
+
+public class Soldier {
+	private String name;
+	private Gun gun;
+	
+	
+	public void info() {
+		System.out.println(name + ", " + gun.getName() + "에 " + gun.getBullet() + "발 남았다.");
+		
+	}
+	public void reload(int i) {
+		if(gun.getFULL_BULLET() == gun.getBullet())
+			System.out.println("0발 장전, 현재 " + gun.getFULL_BULLET() + "발 남음");
+		else {
+			int c = i + gun.getBullet();
+			if( c <= gun.getFULL_BULLET()) {
+				gun.setBullet(c);
+				System.out.println(i + "발 충전, 현재 " + gun.getBullet() + "발 남음");
+			}
+			else {
+				gun.setBullet(gun.getFULL_BULLET());
+				 System.out.println(i - (c-gun.getFULL_BULLET()) + "발 충전, 현재 " + gun.getFULL_BULLET() + "발 남음");
+			}
+		}
+			
+	}
+	public void shoot() {
+		int tmp = gun.getBullet();
+		if(tmp != 0) {
+			gun.setBullet(gun.getBullet()-1);
+			System.out.println("빵야, 현재 " + gun.getBullet() + "발 남음");
+		}
+		else
+			System.out.println("헛빵");
+	}
+	
+	
+}

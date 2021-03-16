@@ -1,0 +1,42 @@
+package practice;
+
+public class Stack {
+
+
+		private int[] arr;
+		private int itr;
+		
+		
+		public Stack(){
+			itr = -1;
+			arr = new int[10000];
+		}
+
+		void push(int n){
+			arr[++itr] = n;
+		}
+
+		void pop(){
+			if( empty() == 1)
+				System.out.println(-1);		
+			else
+				System.out.println(arr[itr--]);
+		}
+
+		void top(){
+			System.out.println(arr[itr]);
+		}
+
+		int empty(){
+			if(itr < 0)
+				return 1;
+			return 0;
+		}
+
+		int size(){
+			return (itr + 1);
+		}
+
+
+	
+}

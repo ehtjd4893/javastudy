@@ -1,0 +1,27 @@
+package quiz09;
+
+public class Soldier {
+
+
+		
+	public void addGun(Gun gun2) {
+	}
+
+	public void shoot(int i) {
+		
+	}
+	
+	public void reload(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void reload(int i, int j) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void reload(String str, int i) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

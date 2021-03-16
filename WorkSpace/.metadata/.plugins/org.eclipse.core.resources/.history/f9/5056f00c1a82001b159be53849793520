@@ -1,0 +1,28 @@
+package ex02_method;
+/*
+ * 메소드( method )
+ * 1. 구성
+ * 		1) 결과타입
+ * 		2) 메소드명
+ * 		3) 매개변수
+ * */
+public class Person {
+
+	// field
+	String name;
+	int age;
+	char gender;
+	boolean isKorean;
+	
+	// method
+	// 1. 결과타입
+	// 2. 메소드명
+	// 3. 매개변수
+	void set(String n, int a, char g, boolean isK) {
+		name = n;
+		age = a;
+		gender = g;
+		isKorean = isK;
+		
+	}
+}

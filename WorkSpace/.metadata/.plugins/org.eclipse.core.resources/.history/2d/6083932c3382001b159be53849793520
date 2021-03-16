@@ -1,0 +1,16 @@
+package ex03_overloading;
+
+public class Square extends Rectangle {
+	int height;
+	@Override
+	void set(int w) {
+		height = w;
+	}
+
+	@Override
+	int getArea() {
+		// TODO Auto-generated method stub
+		return Math.pow(height, 2);
+	}
+	
+}

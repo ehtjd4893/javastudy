@@ -1,0 +1,25 @@
+package quiz09;
+
+public class Gun {
+	private String name;
+	private int bullet;
+	private final int FULL_BULLET = 6;
+	
+	public Gun(String name, int bullet) {
+		this.name = name;
+		this.bullet = bullet;
+	}
+	
+	public void shoot() {
+		if(this.bullet > 0) {
+			this.bullet--;
+			System.out.println(this.name + " 빵야(현재 " + this.bullet + "발 남음)");
+		}
+		else
+			System.out.println(this.name + " 헛빵");
+	}
+	
+	public void info() {
+		System.out.println(this.name + "(" + this.bullet + "발)");
+	}
+}

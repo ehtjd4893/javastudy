@@ -1,0 +1,24 @@
+package quiz10;
+
+public class Lecture {
+	Student[] students;
+	String title;
+	public Lecture(String string, String[] n) {
+		this.title = string;
+		for(int i = 0; i < n.length;i++)
+			this.students[i] = new Student(n[i]);
+	}
+
+	public void exam() {
+		for(int i = 0; i < students.length;i++) {
+			students[i].setScores(1);
+		}
+		
+	}
+
+	public void info() {
+		for(int i = 0; i < students.length;i++)
+			this.students[i].info();
+	}
+
+}

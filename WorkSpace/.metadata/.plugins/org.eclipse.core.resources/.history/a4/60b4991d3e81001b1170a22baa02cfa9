@@ -1,0 +1,40 @@
+package ex01_random;
+
+// 임시비밀번호 발급하기
+// 영문대문자  + 아라비아숫자 6자리
+// 약 5:5
+
+public class Quiz01 {
+
+	public static void main(String[] args) {
+		// 아스키 코드 65 ~ 90 를 이용하는 방법		
+		int rand;
+		String pwd = "";
+		for(int i = 0; i < 6; i++) {
+			rand = (int)(Math.random() * 52) + 39;
+			if( 65 <=rand &&  rand < 91)
+				pwd += (char)rand;
+			else {	// 39 ~ 64의 26개 숫자			
+				pwd += rand % 10;
+			}
+		}
+		
+		
+		// 문자 배열을 이욯나는 방법
+		char[] charSet = {
+				'0','1','2','3','4','5',
+				'6','7','8','9','A','B',
+				'C','D','E','F','G','H',
+				'I','J','K','L','M','N',
+				'O','P','Q','R','S','T',
+				'U','V','W','X','Y','Z'				
+		};
+		int index = (int)(Math.random() + charSet.length);
+		String pw = "";
+		for(int i = 0; i < 6; i++)
+			pw += index[i];
+		
+		System.out.println(pwd);
+	}
+
+}

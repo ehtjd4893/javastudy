@@ -1,0 +1,86 @@
+package practice;
+
+import java.util.Scanner;
+
+public class queue {
+	static int f_itr = 0;
+	static int size = 0;
+	static int b_itr = 0;
+	static int q_size = 10000;
+	static boolean isFull = false;
+	static int[] q = new int[q_size];
+
+	static void push(int x) {
+		q[f_itr] = x;
+		b_itr++;
+	}
+	
+	static void pop() {
+		if(f_itr != b_itr) {
+			System.out.println(q[f_itr] + "");
+			f_itr++;
+			if(f_itr >= q_size)
+					f_itr = 0;					
+		}
+	}
+	
+	static int size() {
+		System.out.println(Math.abs(b_itr - f_itr));
+		return Math.abs(b_itr - f_itr);
+	}
+	
+	static boolean empty() {
+		return f_itr == b_itr;	
+	}
+	
+	static void front() {
+		
+		if(!empty())
+			System.out.println(q[f_itr]);
+		else
+			System.out.println(-1);
+	}
+	
+	static void back() {
+		if(!empty())
+			System.out.println(q[b_itr]);
+		else
+			System.out.println(-1);
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		StringBuffer sb = new StringBuffer("");
+		int n_prompt = sc.nextInt();
+		String prompt;
+		for(int i = 0; i < n_prompt; i++) {
+			prompt = sc.next();
+			switch(prompt) {
+			case "push":
+				int t = sc.nextInt();
+				push(t);
+				break;
+			case "pop":
+				pop();
+				break;
+			case "size":
+				size();
+				break;
+			case "empty":
+				System.out.println(empty() ? 1 : 0);
+				break;
+			case "front":
+				front();
+				break;
+			case "back":
+				back();
+			}
+			for(int k = 0; k < size();k++) {
+				System.out.println("f_itr: " + f_itr);
+				System.out.println("b_itr: " + b_itr);
+//			}
+		}
+
+	}
+
+}

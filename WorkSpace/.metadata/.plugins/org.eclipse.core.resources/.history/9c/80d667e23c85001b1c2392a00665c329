@@ -1,0 +1,12 @@
+package quiz09;
+
+public class Gun {
+	private String name;
+	private int bullet;
+	private final int FULL_BULLET = 6;
+	
+	public Gun(String name, int bullet) {
+		this.name = name;
+		this.bullet = bullet;
+	}
+}

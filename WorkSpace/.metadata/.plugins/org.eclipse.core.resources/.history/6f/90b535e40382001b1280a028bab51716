@@ -1,0 +1,47 @@
+package practice;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Hanoi {
+	static Stack<Integer> x = new Stack<>();
+	static Stack<Integer> y = new Stack<>();
+	static Stack<Integer> z = new Stack<>();
+	
+	// hanoi의 원판을 몇 번 옮겼는지 반환하는 함수
+	public static int hanoi(int n, Stack<Integer> from, Stack<Integer> rest , Stack<Integer> dest, int c) {	
+		int cnt = c;
+		if(n == 1)
+			return 1;
+		else if(n == 2)
+			return 2;
+		else {
+			cnt += hanoi(n - 1, from, dest, rest, cnt);
+			cnt += hanoi(n - 2, from, rest, dest, cnt);
+			return cnt;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n = 0;		// 원판 개수 
+		int	cnt = 0;	// 원판 옮기는 횟수 카운
+		
+		do {
+			System.out.print("원판의 개수 >>>");
+			n = sc.nextInt();
+		} while( n < 1 || n > 20);
+		
+		for(int i = n; i > 0; i--)	// x 타워에 원판 넣기
+			x.push(n);
+		
+		
+		
+		System.out.println(cnt);
+		
+		
+		sc.close();
+	}
+
+}

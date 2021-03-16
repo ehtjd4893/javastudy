@@ -1,0 +1,75 @@
+package practice;
+
+public class Stack {
+
+	
+	#include <iostream>
+	#include <string>
+	using namespace std;
+
+	class STK{
+		private:
+
+		int *arr;
+		int itr;
+		
+		
+		public:
+		STK(){
+			itr = -1;
+			arr = new int[10000];
+		}
+
+		void push(int n){
+			arr[++itr] = n;
+		}
+
+		void pop(){
+			if( empty() == 1)
+				cout << -1 << "\n";		
+			else		
+				cout << arr[itr--] << "\n";	
+		}
+
+		void top(){
+			cout << arr[itr] << "\n";	
+		}
+
+		int empty(){
+			if(itr < 0)
+				return 1;
+			return 0;
+		}
+
+		int size(){
+			return (itr + 1);
+		}
+	};
+
+	int main(){
+		STK stc;
+		int num_p;	// 명령어 개수
+		string prompt;
+		int x;
+		cin >> num_p;
+		for(int i = 0; i < num_p; i++){
+			cin >> prompt;
+			
+				if(prompt ==  "push"){			
+					cin >> x;
+					stc.push(x);
+				}else if(prompt == "pop"){
+					stc.pop();
+				}else if(prompt == "top"){
+					stc.top();
+				}else if(prompt == "empty"){
+					cout << stc.empty() << "\n";
+				}else if(prompt == "size")
+					cout << stc.size() << "\n";
+
+		} // end of for i 
+		
+		return 0;
+	}
+	
+}

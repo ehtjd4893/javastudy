@@ -1,0 +1,14 @@
+package quiz06;
+
+public class Customer {
+	BreadAndChange bac;
+	
+	public Customer(int money) {
+		bac = new BreadAndChange(money);
+	}
+
+	public void buy(Bakery bakery1, int i) {
+		bakery1.sell(i);
+	}
+
+}

@@ -1,0 +1,25 @@
+package quiz04;
+
+public class Soldier {
+	private String name;
+	private Gun gun;
+	
+	
+	public Soldier(String name, Gun gun) {
+		super();
+		this.name = name;
+		this.gun = gun;
+	}
+	
+	public void info() {
+		System.out.println(name + ", " + gun.getName() + "에 " + gun.getBullet() + "발 남았다.");
+	}
+	
+	public void reload(int i) {
+		gun.reload(i);
+	}
+	
+	public void shoot() {
+		gun.shoot();
+	}
+}

@@ -1,0 +1,19 @@
+package quiz10;
+
+public class Lecture {
+
+	public Lecture(String string, String[] names) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void exam() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void info() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

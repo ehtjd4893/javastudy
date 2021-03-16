@@ -1,0 +1,18 @@
+package ex02_method;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Person p = new Person();
+		
+		p.set("Elice", 18, 'W', false);
+		System.out.println("");
+		System.out.println("나이: " + p.age);
+		System.out.println("키: " + p.height);
+		System.out.println("성별: " + p.gender);
+		System.out.println("이름:" + p.name);
+		System.out.println(p.isKorean ? "한국인" : "외국인");
+		
+	}
+
+}
