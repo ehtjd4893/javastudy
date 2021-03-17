@@ -10,19 +10,15 @@ public class math1 {
 		 a = sc.nextInt();
 		 b = sc.nextInt();
 		 c = sc.nextInt();
-		 long cnt = 1;
-		 while(true){
-			if( b >= c){
-				 cnt = -1;
-				 break;	
-			}
-			else if((a+b*cnt) < c * cnt)
-				break;
-			else{
-				cnt++;
-			}
+		 long cnt;
+		if( b >= c){
+			cnt = -1;
+		}
+		else {
+			cnt = a / (c-b) + 1;
+		}
+
 				   
-		    }
 		    System.out.println(cnt + "");
 		    sc.close();
 	}

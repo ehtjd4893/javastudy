@@ -21,9 +21,9 @@ public class Seat {
 	}
 	public void info() {
 		if(name == null)
-			System.out.println("가능");
+			System.out.print("가능");
 		else
-			System.out.println(name);
+			System.out.print(name.length() > 2 ? (name.charAt(0) + "*" + name.charAt(name.length()-1)) : "");
 	}
 	
 	// 
