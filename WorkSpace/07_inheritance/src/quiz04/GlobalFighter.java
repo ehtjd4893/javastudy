@@ -9,6 +9,6 @@ public class GlobalFighter extends Fighter {
 	public void attack(Fighter f) {
 		// 20% 확률로 한 방에 ko시킬 수 있다.
 
-		f.setEnergy(this.getPower());
+		f.setEnergy(f.getEnergy() - this.getPower());
 	}
 }

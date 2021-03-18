@@ -14,11 +14,13 @@ public class KoreanFighter extends Fighter {
 		if(Math.random() < 0.2) {
 			f.setAlive(false);
 			System.out.println(this.getName() + "이(가) " + f.getName() + "을 KO시켰다.");	
+			return;
 		}
 		else {
-			f.setEnergy(this.getPower());
-			System.out.println(this.getName() + "이(가) " + f.getName() + "에게 " + );	
+			f.setEnergy(f.getEnergy() - this.getPower());
+			System.out.println(this.getName() + "이(가) " + f.getName() + "에게 " + getPower() + "의 데미지를 주었다.");	
 
 		}
+		System.out.println(f.getName() + " 남은 Hp: " + f.getEnergy());
 	}
 }
