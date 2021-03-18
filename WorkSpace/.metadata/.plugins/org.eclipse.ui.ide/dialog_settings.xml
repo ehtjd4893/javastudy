@@ -5,4 +5,22 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 		</list>
 	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\SPRING0303\javastudy\WorkSpace\07_inheritance"/>
+			<item value="D:\SPRING0303\javastudy\WorkSpace\Practice"/>
+			<item value="D:\SPRING0303\javastudy\WorkSpace\06_oop"/>
+			<item value="D:\SPRING0303\javastudy\WorkSpace\05_class"/>
+			<item value="D:\SPRING0303\javastudy\WorkSpace\04_api"/>
+			<item value="D:\SPRING0303\javastudy\WorkSpace\03_array"/>
+			<item value="D:\SPRING0303\javastudy\WorkSpace\02_control"/>
+			<item value="D:\SPRING0303\javastudy\WorkSpace\01_Basic"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
 </section>
