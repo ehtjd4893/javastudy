@@ -6,11 +6,11 @@ public abstract class Fighter {
 	private int energy;
 	private int power;
 	
-	public Fighter(String name, int energy, int power) {
+	public Fighter(String name) {
 		super();
 		this.name = name;
-		this.energy = energy;
-		this.power = power;
+		this.energy = (int)(Math.random()*100) + 1;
+		this.power = (int)(Math.random()*10) + 1; 
 		this.isAlive = true;
 	}
 	
