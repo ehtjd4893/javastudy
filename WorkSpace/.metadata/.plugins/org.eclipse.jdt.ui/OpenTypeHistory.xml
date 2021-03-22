@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=07_inheritance/src&lt;ex12_abstract{Shape.java[Shape" modifiers="1025" timestamp="1616053024471"/>
-<typeInfo handle="=07_inheritance/src&lt;quiz04{Fighter.java[Fighter" modifiers="1025" timestamp="1616055472246"/>
+<typeInfo handle="=07_inheritance/src&lt;ex12_abstract{Shape.java[Shape" modifiers="1025" timestamp="1616054167481"/>
+<typeInfo handle="=07_inheritance/src&lt;quiz04{Fighter.java[Fighter" modifiers="1025" timestamp="1616112798979"/>
+<typeInfo handle="=07_inheritance/src&lt;ex14_interface{Animal.java[Animal" modifiers="513" timestamp="1616117218420"/>
+<typeInfo handle="=07_inheritance/src&lt;ex15_interface_extends{Computable.java[Computable" modifiers="513" timestamp="1616119608406"/>
+<typeInfo handle="=07_inheritance/C:\/Program Files\/Java\/jre1.8.0_202\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1616024620473"/>
+<typeInfo handle="=07_inheritance/src&lt;ex16_interface_extends{Pet.java[Pet" modifiers="1" timestamp="1616120190808"/>
+<typeInfo handle="=07_inheritance/src&lt;quiz05{BunkerAble.java[BunkerAble" modifiers="513" timestamp="1616123096125"/>
+<typeInfo handle="=07_inheritance/src&lt;quiz05{Terran.java[Terran" modifiers="1" timestamp="1616123672148"/>
+<typeInfo handle="=08_exception/C:\/Program Files\/Java\/jre1.8.0_202\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1616024620473"/>
 </typeInfoHistroy>
