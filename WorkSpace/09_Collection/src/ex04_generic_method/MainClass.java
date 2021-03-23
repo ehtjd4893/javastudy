@@ -16,7 +16,7 @@ public class MainClass {
 
 		// getTotal 2
 		System.out.println(c.getTotal2(b));
-	 	System.out.println(c.getTotal2(s));
+	 	//System.out.println(c.getTotal2(s));
 	 	// 여기서는 T extends Number를 통해 명시해놓았기 때문에 String타입 s는
 	 	// compile time에 오류가 뜬다.
 		
