@@ -110,7 +110,7 @@ public class StaffDao {
 			 * "UPDATE staff SET department = ? where no = ?"; }
 			 */
 			sql = "UPDATE staff SET name = ?, department = ? where no = ?";
-			ps = con.prepareCall(sql);
+			ps = con.prepareStatement(sql);
 			ps.setString(1,dto.getName());
 			ps.setString(2,dto.getDepartment());
 			ps.setInt(3,dto.getNo());

@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="update"/>
+		<item key="selection" value="Max"/>
 		<list key="findhistory">
+			<item value="max"/>
+			<item value="close"/>
+			<item value="getcon"/>
+			<item value="get"/>
+			<item value="delete"/>
 			<item value="update"/>
 			<item value="equals"/>
 			<item value=""/>
