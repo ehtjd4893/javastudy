@@ -19,6 +19,7 @@ public class ClientMainClass {
 			int length = is.read(bytes);
 			String msg = new String(bytes,0,length, "UTF-8");
 			System.out.println(msg);
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		} finally {
